@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "file_structure.h"
+#include "util.h"
 
 int main() {
 

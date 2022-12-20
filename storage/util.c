@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "file_structure.h"
 
-#define MaxName 20
 #define MaxLine 101
 
 void average(char *fileName) {
@@ -49,7 +49,6 @@ FILE *getFileName(char *prompt, char *name) {
 }
 
 void compare(char *name1, char *name2) {
-  char name1[MaxName], name2[MaxName];
   char line1[MaxLine], line2[MaxLine];
   FILE *file1, *file2, *getFileName(char *, char *);
   char *eof1, *eof2;
@@ -65,7 +64,7 @@ void compare(char *name1, char *name2) {
     if (fgets(line2, MaxLine, file2) == NULL)
       printf("\nFiles are indentical\n\n");
     else
-      printf("\n%s, with %d line(s), is a subset of %s\n", name1, lineNum1, name2);
+      printf("\n%s, with %d line(s), is a subset of %s\n", name1, lineNum, name2);
   } else if (eof2 == NULL) {
     printf("\n%s with %d line(s) is a subset of %s\n", name2, lineNum, name2);
   } else {

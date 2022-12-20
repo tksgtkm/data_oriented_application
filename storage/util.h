@@ -1,5 +1,5 @@
-#ifndef __FILE_H
-#define __FILE_H
+#ifndef __UTIL_H
+#define __UTIL_H
 
 void average(char*);
 
